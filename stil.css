@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
 }
-body {
-    background-image: url(fon.png);
+.wrapper {
+    background-image: url(Picture/fon.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,9 +11,7 @@ body {
     height: 1024px;
 }
 .top__blok {
-    width: 788.78px;
-    height: 125.01px;
-    margin-top: 217px;
+    padding-top: 217px;
     margin-left: 120px;
     margin-right: 531px;
     display: flex;
@@ -40,11 +38,32 @@ body {
     flex-direction: column;
     align-items: center;    
     color: #FFFFFF;
+    margin-bottom: 44px;
 }
 .top__blok-button {
-    margin-top: 44px;
     width: 234px;
     height: 49px;
     background: #9C0332;
     border-radius: 30px;
+    color: #FFFFFF;
+}
+.blok__conteiner {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    background-color: black;
+    padding-top: 129px;
+    padding-bottom: 129px;
+}
+.blok__conteiner-image {
+    font-family: 'Montserrat';
+    width: 379px;
+    height: 300px;
+    color: #FFFFFF;
+    position: relative;
+}
+.blok__conteiner-play {
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
 }

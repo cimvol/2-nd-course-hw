@@ -2,12 +2,16 @@
     margin: 0;
     padding: 0;
 }
+center {
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+}
+
 .wrapper {
     background-image: url(Picture/fon.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1440px;
     height: 1024px;
 }
 .top__blok {
@@ -15,6 +19,7 @@
     margin-left: 120px;
     margin-right: 531px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 .top__blok-title { 
@@ -26,7 +31,6 @@
     color: #FFFFFF;
 }
 .top__blok-opisanie {
-    width: 481px;
     height: 64px;
     padding-top: 32px;
     font-family: 'Montserrat';
@@ -46,7 +50,14 @@
     background: #9C0332;
     border-radius: 30px;
     color: #FFFFFF;
+    transition: all 1.1s ease-in-out;
 }
+.top__blok-button:hover {
+    transform: scale(1.1);
+    transition: all 1.1s ease-in-out;
+}
+
+
 .blok__conteiner {
     display: flex;
     justify-content: center;
@@ -54,6 +65,7 @@
     background-color: black;
     padding-top: 129px;
     padding-bottom: 129px;
+    width: 100%;
 }
 .blok__conteiner-image {
     font-family: 'Montserrat';
@@ -62,8 +74,54 @@
     color: #FFFFFF;
     position: relative;
 }
+.blok__conteiner-image:hover {
+    border: 2px solid rgb(14, 146, 248);
+}
+
+
 .blok__conteiner-play {
     position: absolute;
     left: 32px;
     bottom: 32px;
+}
+
+@media all and (max-width: 375px) {
+    .center {
+        padding-left: calc(50% - 171px);
+        padding-right: calc(50% - 171px);
+    }
+    .wrapper {
+        height: 735px;
+    }
+    .top__blok {
+        padding-top: 217px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;  
+        margin-right: 16px;  
+        margin-left: 16px;
+    }
+    .top__blok-title {
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+    }
+    .top__blok-opisanie {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height:22px;
+        text-align: center;
+    }
+    .blok__conteiner {
+        flex-direction: column;
+    }
+    .blok__conteiner-image img {
+        width: 343px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }

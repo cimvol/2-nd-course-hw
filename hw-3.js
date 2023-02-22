@@ -87,14 +87,26 @@ switch(userMonth) {
     alert('Entered number is not even');
    } */
 
-/* Exercise 8 
+   /* Exercise 8-9 
    let userOS = Number(prompt('If you have Iphone please Enter - "0", if you have Android please Enter - "1"'));
    switch (userOS) {
     case 0:
+        let yearsPhone = Number(prompt('Please enter production year'));
+        if(yearsPhone >= 2015) {
         alert('To install the mobile application for IOS follow the link');
+             }
+        else {
+            alert('To install the light version of the application for IOS follow the link');
+        }
         break;
         case 1:
+            let yearsAndroid = Number(prompt('Please enter production year'));
+            if(yearsAndroid >= 2015) {
         alert('To install the mobile application for Android follow the link');
+            }
+        else {
+            alert('To install the light version of the application for Android follow the link');
+        }
         break;
     default:
         alert('Not found');

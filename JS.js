@@ -26,13 +26,15 @@ function PlayRemember () {
     let answer2 = prompt('write the last element');
     let reply1 = 'Яблоко';
     let reply2 = 'Мандарин';
-      if (answer1.toUpperCase === reply1.toUpperCase && answer2.toUpperCase === reply2.toUpperCase)  {
+      if (answer1.toUpperCase() === reply1.toUpperCase() && answer2.toUpperCase() === reply2.toUpperCase())  {
           alert ('Сongratulations you answered correctly !!!'); 
-      } else (answer1.toUpperCase !== reply1.toUpperCase && answer2.toUpperCase === reply2.toUpperCase ||answer1.toUpperCase === reply1.toUpperCase && answer2.toUpperCase !== reply2.toUpperCase); {
+        } 
+          else if (answer1.toUpperCase() !== reply1.toUpperCase() && answer2.toUpperCase() === reply2.toUpperCase() || answer1.toUpperCase() === reply1.toUpperCase() && answer2.toUpperCase() !== reply2.toUpperCase()) {
                   alert ('You were close to winning');
               }
-                  alert('You answered incorrectly, please try again');
-      
+              else if  (answer1.toUpperCase() !== reply1.toUpperCase() && answer2.toUpperCase() !== reply2.toUpperCase()) {
+                alert('You answered incorrectly, please try again');
+              }
       }
       
       

@@ -43,7 +43,7 @@ function makeMassiv(a) {
     let min = 0;
     const arr = [... Array(longMassiv)];
     for (let i = 0; i < arr.length; i ++) { 
-        arr[i] = Math.round((Math.random(min, max) * 10));
+        arr[i] =  min + Math.random() * (max + 1 - min);
       }
    return arr;
 }

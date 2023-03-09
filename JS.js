@@ -16,3 +16,26 @@ function PlaySeasons (a) {
         alert('Wrong!!! This month error does not exist');
     }
 }
+
+function PlayRemember () {
+    let  arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+      alert(arr);
+    let  arr1 = arr.sort();
+    alert(arr1);
+    let answer1 = prompt('write the first element');
+    let answer2 = prompt('write the last element');
+    let reply1 = 'Яблоко';
+    let reply2 = 'Мандарин';
+      if (answer1.toUpperCase === reply1.toUpperCase && answer2.toUpperCase === reply2.toUpperCase)  {
+          alert ('Сongratulations you answered correctly !!!'); 
+      } else (answer1.toUpperCase !== reply1.toUpperCase && answer2.toUpperCase === reply2.toUpperCase ||answer1.toUpperCase === reply1.toUpperCase && answer2.toUpperCase !== reply2.toUpperCase); {
+                  alert ('You were close to winning');
+              }
+                  alert('You answered incorrectly, please try again');
+      
+      }
+      
+      
+      
+  
+  

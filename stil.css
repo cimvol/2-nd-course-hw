@@ -138,6 +138,62 @@ center {
     padding-left: 135px;
 }
 
+.blok_remember {
+    width: 100%;
+    background: #000915;
+    display: flex;
+    padding-bottom: 242px;
+}
+
+.block_remember_image {
+    padding-left: 120px;
+    width: 481px;
+    height: 322px;
+}
+
+.blok_remember_content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 135px;
+}
+
+.block_remember-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding-bottom: 32px;
+}
+.block_remember-text {
+    width: 588px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding-bottom: 32px;
+}
+.block_remember-button {
+    width: 234.06px;
+    height: 48.6px;
+    background: #9C0332;
+    border-radius: 30px;
+    color: #FFFFFF;
+    transition: all 1.1s ease-in-out;
+}
+.block_remember-button:hover {
+    background-color: bisque;
+    color: #000915;
+    transform: scale(1.1);
+    transition: all 1.1s ease-in-out;
+}
 
 @media all and (max-width: 375px) {
     .center {
@@ -225,6 +281,43 @@ center {
         width: 344px;
         height: 236px;
     }
+    .blok_remember {
+        flex-direction: column-reverse;
+        padding-bottom: 98px;
+    }
+    .blok_remember_content {
+        padding-left: 16px;
+        padding-right: 16px;
+        align-items: center;
+    }
+    .block_remember-title {
+        font-size: 32px;
+    }
+    .block_remember-text {
+        font-size: 14px;
+        width: 343px;
+        align-items: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .block_remember_image {
+        padding-top: 77px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .block_remember_image img {
+        width: 344px;
+        height: 231px;
+    }
+    
 
 
 

@@ -5,7 +5,7 @@ console.log(str);*/
 
 /* Exersice 2 
 let arr = ['Росток', 'АвтО', 'стакан', 'СОК', 'РосТов', 'песок', 'ясень', 'Соковыжималка'];
-let str = 'то';
+let str = 'ст';
 arr.forEach((arr) => {
 if (arr.toLowerCase().includes(str.toLowerCase())) {
     console.log(arr);
